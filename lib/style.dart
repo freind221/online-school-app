@@ -1,0 +1,78 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
+// import 'package:montakhab_tactic/views/tabs/bottomtab_screen.dart';
+
+class Style {
+  static const Color primarycolo = Color(0xFF76062e); // #b30e35
+  static const Color logocolo = Color(0xFFb30e35); // #b30e35
+  static const Color secondarycolo = Color(0xFFf3e9df); //#f3e9df
+  static const Color bgcolor = Color(0xFF15191f); // #15191f
+
+  static const String fontfam = "Montserrat";
+  static const String fontfam2 = "Lato";
+
+  static TextStyle titleTextStyle = GoogleFonts.montserrat(
+    textStyle: TextStyle(
+      color: Colors.black,
+    ),
+    fontWeight: FontWeight.w700,
+    fontSize: 24,
+  );
+
+  static TextStyle dashTextStyle = TextStyle(
+    color: Colors.grey,
+    fontWeight: FontWeight.w700,
+    fontSize: ScreenUtil().setSp(16),
+  );
+  static TextStyle subtitleTextStyle = GoogleFonts.lato(
+    textStyle: TextStyle(
+      color: Colors.white,
+    ),
+    fontWeight: FontWeight.w700,
+    fontSize: 24,
+  );
+  static TextStyle subsubTextStyle({colo = Colors.white}) => GoogleFonts.lato(
+        textStyle: TextStyle(
+          color: colo,
+        ),
+        fontWeight: FontWeight.w700,
+        fontSize: 22,
+      );
+
+  static TextStyle todayTextStyle = TextStyle(
+    fontSize: ScreenUtil().setSp(15),
+    color: primarycolo,
+    // fontFamily: fontfamr,
+    fontWeight: FontWeight.w700,
+  );
+
+  static InputDecoration inputregular(String hint,
+      {Icon? icon, Icon? oneicon, radius = 100}) {
+    return InputDecoration(
+      hintText: hint,
+      hintStyle: TextStyle(
+        fontSize: 17,
+        color: Colors.grey,
+      ),
+      fillColor: Colors.white,
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(radius),
+        borderSide: BorderSide(color: Color.fromARGB(255, 212, 212, 212)),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(radius),
+        borderSide: BorderSide(color: Color.fromARGB(255, 212, 212, 212)),
+      ),
+      errorBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(radius),
+        borderSide: BorderSide(color: Colors.red),
+      ),
+      suffixIcon: icon,
+      filled: true,
+      prefixIcon: oneicon,
+      contentPadding:
+          const EdgeInsets.symmetric(horizontal: 12.0, vertical: 12),
+    );
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "601935392634",
+    "project_id": "faheem-79697",
+    "storage_bucket": "faheem-79697.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601935392634:android:88dd1f411a25ba525ff0c3",
+        "android_client_info": {
+          "package_name": "com.example.faheem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601935392634-7g5pkl54lscqvmdjulnupn5apa507g6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpsfhlnSuHnOQW1QwEQBZdt2oRLDZ7n4Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601935392634-7g5pkl54lscqvmdjulnupn5apa507g6n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "601935392634-fsjf0mhpouot8q1m9bt0omkbkorumqn9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.faheem"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
